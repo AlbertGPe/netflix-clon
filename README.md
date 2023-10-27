@@ -1,6 +1,7 @@
 # Libraries imported
 
 - material-ui/core
+- mui/styles
 - axios
 - firebase 
 - react-router-dom

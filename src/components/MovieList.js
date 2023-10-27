@@ -1,10 +1,10 @@
-import { makeStyles } from '@mui/styles'
+import { makeStyles } from '@mui/material'
 import React from 'react'
 
-function Paypal() {
+function MovieList() {
   const classes = useStyles();
   return (
-    <div>Paypal</div>
+    <div>MovieList</div>
   )
 }
 
@@ -13,4 +13,4 @@ const useStyles = makeStyles((theme) => ({
   }
 }))
 
-export default Paypal
+export default MovieList

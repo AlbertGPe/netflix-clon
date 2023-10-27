@@ -1,31 +1,30 @@
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import { Counter } from './features/counter/Counter';
-import { Switch, makeStyles } from '@mui/material';
+//import {  } from '@mui/material';
+import { makeStyles } from '@mui/styles';
 import Login from './pages/Login';
 import Profile from './pages/Profile';
 import Paypal from './pages/Paypal';
 import Home from './pages/Home';
 
+
 function App() {
-  const user = null;
+  const user = 'pepe';
   const classes = useStyles();
-  
+
   return (
     <div className={classes.root}>
       <Router>
         {
           !user ? (<Login />) : (
-            <Switch>
-              <Route path='/profile'>
-                <Profile />
-              </Route>
-              <Route path='/checkout'>
-                <Paypal />
-              </Route>
-              <Route path='/'>
-                <Home />
-              </Route>
-            </Switch>
+            <Routes>
+              <Route path='/profile' element={<Profile />} />
+    
+              <Route path='/checkout' element={<Paypal />} />
+
+              <Route path='/' element={<Home />} />
+
+            </Routes>
           )
         }
       </Router>
@@ -35,8 +34,6 @@ function App() {
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: "#111",
-    minHeight: "100vh",
   }
 }))
 

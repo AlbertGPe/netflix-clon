@@ -1,10 +1,10 @@
 import { makeStyles } from '@mui/styles'
 import React from 'react'
 
-function Paypal() {
+function SignUp() {
   const classes = useStyles();
   return (
-    <div>Paypal</div>
+    <div>SignUp</div>
   )
 }
 
@@ -13,4 +13,4 @@ const useStyles = makeStyles((theme) => ({
   }
 }))
 
-export default Paypal
+export default SignUp
