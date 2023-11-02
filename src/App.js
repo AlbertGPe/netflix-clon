@@ -19,11 +19,8 @@ function App() {
           !user ? (<Login />) : (
             <Routes>
               <Route path='/profile' element={<Profile />} />
-    
               <Route path='/checkout' element={<Paypal />} />
-
               <Route path='/' element={<Home />} />
-
             </Routes>
           )
         }
@@ -34,6 +31,8 @@ function App() {
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    minHeight: "100vh",
+    //backgroundColor: "#111",
   }
 }))
 

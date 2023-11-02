@@ -1,10 +1,13 @@
 import { makeStyles } from '@mui/styles'
 import React from 'react'
+import Header from '../components/Header';
 
 function Profile() {
   const classes = useStyles();
   return (
-    <div>Profile</div>
+    <div>
+      Profile
+    </div>
   )
 }
 

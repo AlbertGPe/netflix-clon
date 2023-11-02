@@ -1,16 +1,17 @@
 import { makeStyles } from '@mui/styles'
 import React from 'react'
+import Header from '../components/Header';
 
 function Home() {
   const classes = useStyles();
   return (
-    <div>Home</div>
+    <div>
+      <Header />
+    </div>
   )
 }
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-  }
 }))
 
 export default Home
