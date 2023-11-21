@@ -9,7 +9,7 @@ import Home from './pages/Home';
 
 
 function App() {
-  const user = 'pepe';
+  const user = null;
   const classes = useStyles();
 
   return (
