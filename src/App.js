@@ -9,7 +9,7 @@ import Home from './pages/Home';
 
 
 function App() {
-  const user = null;
+  const user = 'a';
   const classes = useStyles();
 
   return (
@@ -32,7 +32,7 @@ function App() {
 const useStyles = makeStyles((theme) => ({
   root: {
     minHeight: "100vh",
-    //backgroundColor: "#111",
+    backgroundColor: "#111",
   }
 }))
 
